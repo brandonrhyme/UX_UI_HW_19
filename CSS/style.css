@@ -1,4 +1,43 @@
-.inline-block {
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+    background-color: hsl(253, 67%, 82%);
+    vertical-align: top;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aliceblue;
+}
+.logo img {
+    padding: 10px;
+}
+.longformLogo {
+    padding: 5px;
+}
+#mobileNav {
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: chocolate;
+    align-items: center;
+    cursor: pointer;
+}
+#navigationLinks {
+    display: flex;
+    width: 50%;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-color: beige;
+}
+#navigationLinks p {
+    cursor: pointer;
+    text-decoration: #3A15BF;
+}
+/* .inline-block {
     display: inline-block;
     vertical-align: middle;
     background-color: #FFFFFF;
@@ -13,8 +52,24 @@
 nav {
     width: 80%;
     text-align: end;
-
 }
+
+header {
+    height: auto;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+ul {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+li {
+    padding-left: 2%;
+    padding-right: 2%;
+} */
 
 .heroImg {
     display: flex;
@@ -27,11 +82,6 @@ nav {
     background-color: #FFFFFF;
 }
 
-header {
-    height: auto;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-}
 .content {
     max-width: 375px;
     max-height: fit-content;
@@ -40,18 +90,6 @@ header {
     padding: 50px;
     color: #21243d;
 }
-
-ul {
-    /* background-color: black; */
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-}
-
-li {
-    padding-left: 2%;
-    padding-right: 2%;
-}
-
 
 footer {
     background-color: #FFFFFF;
@@ -101,13 +139,25 @@ footer {
     justify-content: center;
 }
 
-@media only screen and (max-width: 600) {
+@media only screen and (min-width: 1000px) {
+    #mobileNav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #navigationLinks {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     
 }
 
 /*           Styles        */
 
-h1 {
+/* h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 p {
@@ -121,6 +171,9 @@ h3 {
 }
 h4 {
     font-family: Arial, Helvetica, sans-serif;
+} */
+body {
+    font-family: 'Heebo', sans-serif;
 }
 button {
     width: 150px;

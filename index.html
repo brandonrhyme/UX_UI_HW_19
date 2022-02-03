@@ -1,35 +1,39 @@
 <!DOCTYPE HTML>
 <link rel="stylesheet" href="CSS/style.css">
+<link href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 <HTML>
     <head>
-        <title></title>
+        <title>Brandon Reim's UX/UI Portfolio</title>
         <style>
-            img {
+            /* img {
                 max-width: 75%;
-                height: auto;
-            }
+                height: fit-content;
+            } */
         </style>
     </head>
     <body>
-        <header class="navigation">
-            <div class="inline-block logo">
+        <nav id="navBar">
+            <div class="logo">
                 <img src="Images/Personal Logo.png">
+                <div class="longformLogo">
+                <p>Brandon Reim</p></div>
             </div>
-            <nav class="inline-block">
-                <ul>
-                    <li class="inline-block">ABOUT</li>
-                    <li class="inline-block">SKILLS</li>
-                    <li class="inline-block">WORK</li>
-                    <li class="inline-block">CONTACT</li>
+            <div id="navigationLinks">
+                <p>ABOUT</p>
+                <p>SKILLS</p>
+                <p>WORK</p>
+                <p>CONTACT</p>
                 <!--<nav class="nav nav-pills flex-column flex-sm-row">
                         <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
                         <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
                         <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
                         <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </nav>-->
-                </ul>
-            </nav>
-        </header>
+            </div>
+            <div id="mobileNav">
+                <img id="hamburgerIcon" src="Images/VectorHamburger.png">
+            </div>
+        </nav>
         <section class="heroImg">
             <div class="content">
                 <img src="images/Headshot.png">
