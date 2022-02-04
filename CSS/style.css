@@ -5,7 +5,7 @@
     vertical-align: center;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 10%;
 }
 .logo {
     display: flex;
@@ -13,6 +13,7 @@
     align-items: center;
     cursor: pointer;
     padding: 10px;
+
 }
 .logo img {
     padding: 10px;
@@ -94,10 +95,11 @@ li {
     justify-content: center;
     align-items: center;
     color: #21243d;
-    background-color: #f24405;
+    /* background-color: #f24405; */
     transition: ease-in-out 1s;
+
 }
-.heroImg {
+.hero {
     display: flex;
     flex-direction: row;
     height: fit-content;
@@ -107,7 +109,7 @@ li {
     justify-content: center;
     align-items: center;
     color: #21243d;
-    background-color: #f29f05;
+    /* background-color: #f29f05; */
     transition: ease-in-out 1s;
 }
 
@@ -118,11 +120,11 @@ li {
     text-align: left;
     padding: 50px;
     color: #21243d;
-    background-color: #049dd9
+    /* background-color: #049dd9 */
     /* position: absolute; */
 
 }
-.heroImg:hover {
+.hero:hover {
     scale: 1.2;
 }
 
@@ -164,7 +166,7 @@ footer {
     "projectA projectABlurb projectABlurb"
     "projectB projectBBlurb projectBBlurb"
     "projectC projectCBlurb projectCBlurb";
-    grid-auto-rows: 200px;
+    grid-auto-rows: 300px;
     /* justify-content: space-evenly; */
     background-color: #049dd9;
     justify-self: center;
@@ -195,6 +197,7 @@ footer {
     background-color: #f2b705;
     margin: 5px;
     padding: 15px;
+
 }
 #projectBBlurb {
     grid-area: projectBBlurb;
@@ -212,10 +215,11 @@ footer {
     background-color: #f24405;
     text-align: right;
     max-width: 600px;
+    overflow: hidden;
 }
 .categoryGridArea {
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     margin: 5px;
     cursor: pointer;
@@ -227,9 +231,19 @@ footer {
         display: none;
         transition: ease-in 1s;
     }
+    body, footer {
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    #navBar, .heroBanner, .mySkills, .myWork, footer {
+        scroll-snap-align: start;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
+    .hero:hover {
+        scale: 1;
+    }
     #navigationLinks {
         display: none;
         transition: ease-out 3s;
@@ -237,11 +251,28 @@ footer {
     .workGrid {
         margin: 10%;
     }
+    /* body {
+        overflow-y: scroll;
+        scroll-snap-type: y proximity;
+    }
+    #navBar, .heroBanner, .mySkills, .myWork {
+        scroll-snap-align: start; 
+    }*/
 }
 
-@media only screen and (max-width: 600px) {
-    .heroImg:hover {
+@media only screen and (max-width: 500px) {
+    .hero:hover {
         scale: 1;
+    }
+    .contentText {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .flexContainer {
+        max-width: 350px;
+    }
+    #mobileNav {
+        height: 20%;
     }
 
 }
@@ -286,12 +317,12 @@ li {
     font-weight: lighter;
     font-size: xx-large;
 }
-.exitSymbol {
+/* .exitSymbol {
     text-align: end;
     list-style: none;
     padding: 5px;
     padding-right: 2%;
-}
+} */
 li:active {
     font-style: oblique;
 }
@@ -299,3 +330,13 @@ li:active {
     display: none;
 
 }
+
+      /* Scroll-Snap-Type Test */
+
+/* body {
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+}
+#navBar, .heroBanner, .mySkills, .myWork {
+    scroll-snap-align: start;
+} */
