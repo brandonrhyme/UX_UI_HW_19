@@ -1,7 +1,7 @@
 #navBar {
     display: flex;
     flex-direction: row;
-    margin: 0px 5%;
+    margin: 0px 2%;
     vertical-align: center;
     justify-content: space-between;
     align-items: center;
@@ -120,9 +120,6 @@ li {
     color: #21243d;
     background-color: #049dd9
     /* position: absolute; */
-
-}
-.contentImage {
 
 }
 .heroImg:hover {
@@ -275,4 +272,30 @@ section.mySkills h1 {
     text-align: center;
     padding: 15px;
     margin-top: 100px;
+}
+ul {
+    background-color: #3A15BF;
+    list-style: none;
+    padding: 15px;
+
+}
+li {
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: xx-large;
+}
+.exitSymbol {
+    text-align: end;
+    list-style: none;
+    padding: 5px;
+    padding-right: 2%;
+}
+li:active {
+    font-style: oblique;
+}
+#slideDownMenu {
+    display: none;
+
 }
