@@ -146,7 +146,6 @@ footer {
     margin-left: 10%;
     margin-right: 10%;
     justify-content: space-evenly;
-    /* max-width: 1100px; */
     justify-self: center;
 }
 .flexContainer > div {
@@ -155,22 +154,265 @@ footer {
     background-color: rgb(255, 255, 255);
     text-align: center;
 }
-
 .workGrid {
-    display: grid;
-    margin-left: 20%;
-    margin-right: 20%;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "projectA projectABlurb projectABlurb"
-    "projectB projectBBlurb projectBBlurb"
-    "projectC projectCBlurb projectCBlurb";
-    grid-auto-rows: 300px;
-    /* justify-content: space-evenly; */
-    background-color: #049dd9;
-    justify-self: center;
+    justify-content: center;
+
 }
+.myWork {
+    /* Works Preview Grid */
+    /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        justify-content: center;
+        justify-self: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    
+        
+
+        /* position: static; */
+        /* width: 908px;
+        height: 920px;
+        /* left: 122px;
+        top: 788px; */
+
+    /* Inside auto layout */
+        /* flex: none;
+        order: 2;
+        flex-grow: 0; */
+        /* margin: 150px 150px; */
+}
+#featuredWorks {
+    /* Section Title */
+        position: static;
+        width: 152px;
+        height: 60px;
+        left: 25px;
+        top: 25px;
+        align-self: flex-start;
+        padding-bottom: 30px;
+        position: relative;
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 60px;
+    /* identical to box height, or 273% */
+        color: #21243D;
+
+    /* Inside auto layout */
+        /* flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 30px 0px; */
+}
+#viewProjects {
+    /* View all projects */
+        position: static;
+        width: 698px;
+        height: 60px;
+        left: 25px;
+        top: 835px;
+
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 60px;
+    /* identical to box height, or 273% */
+        text-align: center;
+
+        color: #21243D;
+}
+.row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+
+        /* position: static; */
+        align-self: stretch;
+
+
+}
+
+.worksButton {
+        display: none;
+}
+
+/*------------------------------------PROJECT TITLE------------------------------------*/
+section.myWork h4 {
+        position: static;
+        width: 434px;
+        height: 44px;
+        left: 0px;
+        top: 0px;
+        
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 44px;
+        margin: 0px;
+    /* identical to box height */
+        color: #21243D;
+                    /* Inside auto layout
+                        flex: none;
+                        order: 0;
+                        align-self: stretch;
+                        flex-grow: 0;
+                        margin: 0px 0px;
+                     */
+            
+
+}
+
+/*------------------------------------TAGS------------------------------------*/
+.tags {
+    /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+
+        position: static;
+        width: 241px;
+        height: 40px;
+        left: 0px;
+        top: 44px;
+
+
+    /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 0px;
+}
+#year {
+        font-family: Heebo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: left;
+
+        color: #ffffff;
+        background-color: #21243D;
+        border-radius: 25px;
+        padding-left: 12px;
+        padding-right: 12px;
+}
+#category {
+    /* UX/UI Project */
+        position: static;
+        width: 121px;
+        height: 29px;
+        left: 120px;
+        top: 15.5px;
+
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 29px;
+
+        color: #8695A4;
+
+    /* Inside auto layout */
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 30px;
+}
+.projectImg {
+    /* Auto layout */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+
+        position: static;
+        width: 246px;
+        height: 176px;
+        left: 0px;
+        top: 0px;
+        background-color: #f24405;
+
+    /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 0px 18px;
+
+            /* KEEEEEEP THISSS */
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+}
+#projectA {
+        background-image: url(/UX_UI_HW_19/Images/Project\ 1.jpg);
+}
+#projectB {
+        background-image: url(/UX_UI_HW_19/Images/Project\ 2.jpg);
+}
+#projectC {
+        background-image: url(/UX_UI_HW_19/Images/Project\ 3.jpg);
+}
+.line {
+        position: static;
+        width: 698px;
+        height: 0px;
+        left: 25px;
+        top: 565px;
+        
+        border: 1px solid #E0E0E0;
+    
+    /* Inside auto layout */
+        flex: none;
+        order: 0;
+        align-self: center;
+        flex-grow: 0;
+        margin: 30px;
+}
+
+.snippet {
+    /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+
+}
+.myWork p {
+        position: static;
+        width: 434px;
+        left: 0px;
+        top: 104px;
+        
+        font-family: Heebo;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 23px;
+        padding-top: 5px;
+        
+        color: #21243D;
+    
+    /* Inside auto layout */
+        flex: none;
+        order: 2;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 0px 0px;
+
+}
+
 /* .workGrid > div {
     margin: 5%;
     padding: 10px;
@@ -180,7 +422,7 @@ footer {
     justify-content: center;
 } */
 
-#projectA {
+/* #projectA {
     grid-area: projectA;
     background-image: url("../Images/FTC\ Desktop.png");
 }
@@ -225,7 +467,7 @@ footer {
     cursor: pointer;
     display: grid;
     align-content: end;
-}
+} */
 @media only screen and (min-width: 1000px) {
     #mobileNav {
         display: none;
@@ -248,8 +490,8 @@ footer {
         display: none;
         transition: ease-out 3s;
     }
-    .workGrid {
-        margin: 10%;
+    /* .workGrid {
+        margin: 10%; */
     }
     /* body {
         overflow-y: scroll;
@@ -280,7 +522,7 @@ footer {
 /*           Styles        */
 
 body {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Heebo', serif;
 }
 button {
     width: 150px;
@@ -290,7 +532,7 @@ button {
     color: #FFFFFF;
     cursor: pointer;
 }
-section.myWork h3 {
+/* section.myWork h3 {
     text-align: center;
     margin-bottom: 75px;
 }
@@ -298,7 +540,7 @@ section.myWork h1 {
     text-align: center;
     padding: 15px;
     margin-top: 100px;
-}
+} */
 section.mySkills h1 {
     text-align: center;
     padding: 15px;
