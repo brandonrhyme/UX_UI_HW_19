@@ -2,11 +2,16 @@ console.log("Your index.js file is loaded correctly!")
 
 //  Zoom Hero Content Animation 
 
-$(document).ready(function(){
-    $("button").hover(function(){
-        $("div.content").css("scale" , "1.3")
-  });
-});
+// $(document).ready(function(){
+//     $("div.content").hover(function(){
+//         var div = $("div.content");  
+//         div.animate({TransformScale: '1.3'}, "fast");
+//     },
+//     function(){
+//         var div = $("div.content");  
+//         div.animate({fontSize: '1em'}, "fast");
+//     });
+// });
 
 //  Hamburger Menu Dropdown (Borrowed from Activity 19.1?)
 //  >> first need to apply media query for hamburger icon <<
