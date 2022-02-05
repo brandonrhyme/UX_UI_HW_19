@@ -129,10 +129,9 @@ li {
 }
 
 footer {
-    background-color: #FFFFFF;
     text-align: center;
-    padding: 3%;
     color: #21243d;
+    padding-top: 100px;
 }
 
 
@@ -142,7 +141,7 @@ footer {
 .flexContainer {
     display: flex;
     flex-wrap: wrap;
-    background-color: #f29f05;
+
     margin-left: 10%;
     margin-right: 10%;
     justify-content: space-evenly;
@@ -351,7 +350,7 @@ section.myWork h4 {
         height: 176px;
         left: 0px;
         top: 0px;
-        background-color: #f24405;
+
         padding-top: 10px;
 
     /* Inside auto layout */
