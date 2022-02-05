@@ -155,7 +155,11 @@ footer {
     text-align: center;
 }
 .workGrid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
 
 }
 .myWork {
@@ -167,8 +171,8 @@ footer {
         padding: 25px;
         justify-content: center;
         justify-self: center;
-        margin-left: 10%;
-        margin-right: 10%;
+        /* margin-left: 10%;
+        margin-right: 10%; */
     
         
 
@@ -229,7 +233,11 @@ footer {
 .row {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
         padding: 0px;
 
         /* position: static; */
@@ -244,17 +252,20 @@ footer {
 
 /*------------------------------------PROJECT TITLE------------------------------------*/
 section.myWork h4 {
-        position: static;
-        width: 434px;
-        height: 44px;
+        /* position: static;
+        width: 434px; */
+        height: fit-content;
         left: 0px;
         top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         
         font-family: Heebo;
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
-        line-height: 44px;
+        line-height: 38px;
         margin: 0px;
     /* identical to box height */
         color: #21243D;
@@ -286,10 +297,10 @@ section.myWork h4 {
 
 
     /* Inside auto layout */
-        flex: none;
+        /* flex: none;
         order: 1;
         flex-grow: 0;
-        margin: 0px 0px;
+        margin: 0px 0px; */
 }
 #year {
         font-family: Heebo;
@@ -330,24 +341,25 @@ section.myWork h4 {
 }
 .projectImg {
     /* Auto layout */
-        display: flex;
+        /* display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 10px;
+        padding: 10px; */
 
-        position: static;
+        /* position: static; */
         width: 246px;
         height: 176px;
         left: 0px;
         top: 0px;
         background-color: #f24405;
+        padding-top: 10px;
 
     /* Inside auto layout */
-        flex: none;
+        /* flex: none;
         order: 0;
         align-self: stretch;
         flex-grow: 0;
-        margin: 0px 18px;
+        margin: 0px 18px; */
 
             /* KEEEEEEP THISSS */
                 background-size: contain;
@@ -364,12 +376,12 @@ section.myWork h4 {
         background-image: url(/UX_UI_HW_19/Images/Project\ 3.jpg);
 }
 .line {
-        position: static;
-        width: 698px;
+        /* position: static; */
+        width: 800px;
         height: 0px;
-        left: 25px;
+        /* left: 25px;
         top: 565px;
-        
+         */
         border: 1px solid #E0E0E0;
     
     /* Inside auto layout */
@@ -384,16 +396,19 @@ section.myWork h4 {
     /* Auto layout */
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: flex-start;
-        padding: 0px;
+        padding-left: 15px;
 
 
 }
 .myWork p {
-        position: static;
-        width: 434px;
-        left: 0px;
-        top: 104px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+height: fit-content;
+max-width: 440px;
+min-width: 90%;
         
         font-family: Heebo;
         font-style: normal;
@@ -405,11 +420,11 @@ section.myWork h4 {
         color: #21243D;
     
     /* Inside auto layout */
-        flex: none;
-        order: 2;
-        align-self: stretch;
+        /* flex: none; */
+    order: 2;
+      /*  align-self: stretch;
         flex-grow: 0;
-        margin: 0px 0px;
+        margin: 0px 0px; */
 
 }
 
@@ -490,9 +505,27 @@ section.myWork h4 {
         display: none;
         transition: ease-out 3s;
     }
-    /* .workGrid {
-        margin: 10%; */
+    .row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10px;
     }
+    .myWork p {
+        width: 300px;
+    }
+    .line {
+        width: 90%;
+        margin: 15px;
+    }
+    .projectImg {
+        min-width: 275px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /* .workGrid {
+        margin: 10%;
+    }*/
     /* body {
         overflow-y: scroll;
         scroll-snap-type: y proximity;
@@ -500,8 +533,10 @@ section.myWork h4 {
     #navBar, .heroBanner, .mySkills, .myWork {
         scroll-snap-align: start; 
     }*/
+    .myWork p {
+        font-size: 14px;
+    }
 }
-
 @media only screen and (max-width: 500px) {
     .hero:hover {
         scale: 1;
@@ -516,7 +551,37 @@ section.myWork h4 {
     #mobileNav {
         height: 20%;
     }
+    .row {
+        width: 100%;
+    }
+    .myWork p {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width:300px;
+    }
+  
+    .snippet {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        min-width: 250px;
+        font-size: 12px;
 
+    }
+    .line {
+        width: 90%;
+        margin: 5px;
+    }
+    .projectImg {
+        min-width: 275px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .snippet h4 {
+        width: 250px;
+    }
 }
 
 /*           Styles        */
