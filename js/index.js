@@ -4,3 +4,10 @@ $(document).ready(function(){
         $("div.content").css("scale" , "1.3")
   });
 });
+
+$(document).ready(function(){
+    $("#hamburgerIcon").on("click", function(){
+        $("#slideDownMenu").slideToggle("fast");
+
+    });  
+});
